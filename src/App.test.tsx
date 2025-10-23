@@ -9,6 +9,8 @@ test('renders welcome message', () => {
 
 test('renders description text', () => {
   render(<App />);
-  const descriptionElement = screen.getByText(/showcase of my accomplishments, skills, and experience/i);
+  const descriptionElement = screen.getByText(
+    /showcase of my accomplishments, skills, and experience/i,
+  );
   expect(descriptionElement).toBeInTheDocument();
 });
