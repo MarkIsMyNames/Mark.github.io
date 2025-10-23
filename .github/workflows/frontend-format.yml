@@ -5,7 +5,9 @@ on:
     branches:
       - main
     paths:
-      - 'frontend/**'
+      - 'src/**'
+      - '.prettierrc'
+      - 'package.json'
       - '.github/workflows/frontend-format.yml'
 
 jobs:
@@ -22,12 +24,9 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: frontend/package-lock.json
 
       - name: Install dependencies
-        working-directory: ./frontend
         run: npm ci
 
       - name: Check formatting
-        working-directory: ./frontend
         run: npm run format:check

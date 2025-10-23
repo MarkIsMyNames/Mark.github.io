@@ -1,8 +1,0 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
-
-test('renders app header', () => {
-  render(<App />);
-  const headerElement = screen.getByText(/React \+ TypeScript \+ Flask/i);
-  expect(headerElement).toBeInTheDocument();
-});
