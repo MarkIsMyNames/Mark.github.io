@@ -1,68 +1,60 @@
 # Personal Website
 
 This is a Personal Website for me that has some of my accomplishments, skills and experience.
-I also plan to add a blog later
+I also plan to add a blog later.
 
+**Live site:** https://MarkIsMyNames.github.io
 
-## Quick Start
+## Tech Stack
+
+- **Frontend:** React 19 with TypeScript (strict mode)
+- **Styling:** CSS
+- **Deployment:** GitHub Pages (automated via GitHub Actions)
+
+## Quick Start (Local Development)
 
 ```bash
-./start.sh
+npm install
+npm start
 ```
 
-## Backend (Flask + Python)
+Visit http://localhost:3000
+
+## Development Commands
 
 ### Testing
 ```bash
-cd backend
-source venv/bin/activate
-python -m pytest  # When tests are added
-```
-
-### Code Formatting
-**Format all Python files:**
-```bash
-cd backend
-black .
-```
-
-### Linting
-**Run Pylint:**
-```bash
-cd backend
-pylint *.py
-```
-
-**Run MyPy type checker:**
-```bash
-cd backend
-mypy .
-```
-
-## Frontend (React + TypeScript)
-
-### Testing
-```bash
-cd frontend
 npm test
 ```
 
 ### Code Formatting
 **Format all files:**
 ```bash
-cd frontend
 npm run format
+```
+
+**Check formatting:**
+```bash
+npm run format:check
 ```
 
 ### Linting
 **Check for linting errors:**
 ```bash
-cd frontend
 npm run lint
 ```
 
 **Auto-fix linting issues:**
 ```bash
-cd frontend
 npm run lint:fix
+```
+
+### Build
+```bash
+npm run build
+```
+
+### Deploy
+```bash
+npm run deploy
 ```
