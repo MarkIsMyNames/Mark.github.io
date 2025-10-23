@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(source venv/bin/activate:*)",
+      "Bash(pylint:*)",
+      "Bash(mypy:*)",
+      "Bash(cd:*)",
+      "Bash(npm test:*)",
+      "Bash(cd /home/Mark/Documents/Big\\ Github\\ Projects/Mark.github.io/frontend && npm run lint:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
