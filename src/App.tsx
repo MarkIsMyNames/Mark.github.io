@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './App.css';
 
 function App(): React.JSX.Element {
@@ -9,6 +10,7 @@ function App(): React.JSX.Element {
         <p>This is a showcase of my accomplishments, skills, and experience.</p>
         <p>More content coming soon!</p>
       </header>
+      <SpeedInsights />
     </div>
   );
 }

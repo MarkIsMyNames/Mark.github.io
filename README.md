@@ -3,13 +3,14 @@
 This is a Personal Website for me that has some of my accomplishments, skills and experience.
 I also plan to add a blog later.
 
-**Live site:** https://MarkIsMyNames.github.io
+**Live site:** https://markdrohan.vercel.app
 
 ## Tech Stack
 
 - **Frontend:** React 19 with TypeScript (strict mode)
 - **Styling:** CSS
-- **Deployment:** GitHub Pages (automated via GitHub Actions)
+- **Deployment:** Vercel (automated)
+- **Analytics:** Vercel Speed Insights
 
 ## Quick Start (Local Development)
 
@@ -54,7 +55,6 @@ npm run lint:fix
 npm run build
 ```
 
-### Deploy
-```bash
-npm run deploy
-```
+## Deployment
+
+The site is automatically deployed to Vercel when changes are pushed to the `main` branch. No manual deployment is needed.
