@@ -2,7 +2,6 @@
   "name": "mark-personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MarkIsMyNames.github.io",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -26,8 +25,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "lint": "eslint src/**/*.{ts,tsx}",
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,json}\"",
@@ -49,7 +46,6 @@
     "@types/styled-components": "^5.1.34",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
-    "gh-pages": "^6.3.0",
     "prettier": "^3.6.2"
   }
 }
