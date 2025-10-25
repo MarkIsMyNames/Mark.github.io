@@ -7,7 +7,8 @@
       "Bash(mypy:*)",
       "Bash(cd:*)",
       "Bash(npm test:*)",
-      "Bash(cd /home/Mark/Documents/Big\\ Github\\ Projects/Mark.github.io/frontend && npm run lint:*)"
+      "Bash(cd /home/Mark/Documents/Big\\ Github\\ Projects/Mark.github.io/frontend && npm run lint:*)",
+      "Bash(npm run lint)"
     ],
     "deny": [],
     "ask": []
