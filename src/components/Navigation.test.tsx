@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
+import { vi } from 'vitest';
 import { Navigation } from './Navigation';
 import { theme } from '../styles/theme';
 
@@ -8,15 +9,15 @@ const renderWithTheme = (component: React.ReactElement): ReturnType<typeof rende
 };
 
 describe('Navigation Component', () => {
-  let scrollToMock: jest.Mock;
+  let scrollToMock: ReturnType<typeof vi.fn>;
 
   beforeEach(() => {
     // Mock window.scrollTo
-    scrollToMock = jest.fn();
+    scrollToMock = vi.fn();
     window.scrollTo = scrollToMock;
 
     // Mock getBoundingClientRect
-    Element.prototype.getBoundingClientRect = jest.fn(() => ({
+    Element.prototype.getBoundingClientRect = vi.fn(() => ({
       top: 100,
       left: 0,
       bottom: 200,

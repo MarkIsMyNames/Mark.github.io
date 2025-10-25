@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
+import { vi } from 'vitest';
 import { ImageModal } from './ImageModal';
 import { theme } from '../styles/theme';
 
@@ -8,7 +9,7 @@ const renderWithTheme = (component: React.ReactElement): ReturnType<typeof rende
 };
 
 describe('ImageModal Component', () => {
-  const mockOnClose = jest.fn();
+  const mockOnClose = vi.fn();
   const testImageUrl = 'test-image.jpg';
   const testAltText = 'Test Image';
 
@@ -121,8 +122,8 @@ describe('ImageModal Component', () => {
   });
 
   it('renders navigation buttons when hasPrevious and hasNext are true', () => {
-    const mockOnPrevious = jest.fn();
-    const mockOnNext = jest.fn();
+    const mockOnPrevious = vi.fn();
+    const mockOnNext = vi.fn();
     renderWithTheme(
       <ImageModal
         isOpen={true}
@@ -140,7 +141,7 @@ describe('ImageModal Component', () => {
   });
 
   it('calls onPrevious when left arrow key is pressed', () => {
-    const mockOnPrevious = jest.fn();
+    const mockOnPrevious = vi.fn();
     renderWithTheme(
       <ImageModal
         isOpen={true}
@@ -156,7 +157,7 @@ describe('ImageModal Component', () => {
   });
 
   it('calls onNext when right arrow key is pressed', () => {
-    const mockOnNext = jest.fn();
+    const mockOnNext = vi.fn();
     renderWithTheme(
       <ImageModal
         isOpen={true}
@@ -172,7 +173,7 @@ describe('ImageModal Component', () => {
   });
 
   it('does not call onPrevious when hasPrevious is false', () => {
-    const mockOnPrevious = jest.fn();
+    const mockOnPrevious = vi.fn();
     renderWithTheme(
       <ImageModal
         isOpen={true}
@@ -188,7 +189,7 @@ describe('ImageModal Component', () => {
   });
 
   it('does not call onNext when hasNext is false', () => {
-    const mockOnNext = jest.fn();
+    const mockOnNext = vi.fn();
     renderWithTheme(
       <ImageModal
         isOpen={true}
@@ -204,8 +205,8 @@ describe('ImageModal Component', () => {
   });
 
   it('calls navigation callbacks when navigation buttons are clicked', () => {
-    const mockOnPrevious = jest.fn();
-    const mockOnNext = jest.fn();
+    const mockOnPrevious = vi.fn();
+    const mockOnNext = vi.fn();
     renderWithTheme(
       <ImageModal
         isOpen={true}
