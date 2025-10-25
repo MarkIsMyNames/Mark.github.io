@@ -10,6 +10,7 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'tsconfig.json'
+      - 'vite.config.ts'
       - '.github/workflows/frontend-tests.yml'
 
 jobs:
@@ -31,4 +32,4 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm test -- --passWithNoTests --watchAll=false --coverage
+        run: npm test

@@ -8,6 +8,7 @@ on:
       - 'src/**'
       - '.prettierrc'
       - 'package.json'
+      - 'package-lock.json'
       - '.github/workflows/frontend-format.yml'
 
 jobs:

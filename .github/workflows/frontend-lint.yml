@@ -8,6 +8,8 @@ on:
       - 'src/**'
       - '.eslintrc.json'
       - 'package.json'
+      - 'package-lock.json'
+      - 'tsconfig.json'
       - '.github/workflows/frontend-lint.yml'
 
 jobs:
